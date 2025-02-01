@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <br>
+    <a href="../index.html">Retornar a pagina principal</a>
+    <br>
+
+    <hr>
+
+    <br>
+    <form>
+        <label for="c-nome">Nome: </label>
+        <input id="c-nome" type="text" placeholder="Digite seu nome" required>
+        <br>
+        <br>
+        <label for="c-senha">Senha: </label>
+        <input type="password" id="c-senha" placeholder="Digite uma senha" required>
+        <br>
+        <br>
+        <label for="c-email">Email: </label>
+        <input type="email" id="c-email" placeholder="Digite seu email" required>
+        <br>
+        <br>
+
+        <hr>
+
+        <h2>Frutas que você gosta</h2>
+        <br>
+
+        <input type="radio" name="fruta" value="Uva" id="uva" required> 
+        <label for="uva">Uva</label>
+        <br> <!--O name representa uma classe, o value é o que vai ser exportado ao enviar a resposta e o id serve apenas para linkar o label-->
+        <input type="radio" name="fruta" value="goiaba" id="goiaba">
+        <label for="goiaba">Goiaba</label>
+        <br>
+        <input type="radio" name="fruta" value="melao" id="melao">
+        <label for="melao">Melão</label>
+        <br>
+        <br>
+
+        <hr>
+
+        <h2>O que você gosta ?</h2>
+        <br>
+
+        <input type="checkbox" name="item1" id="item1" value="Comer">
+        <label for="item1">Comer</label>
+        <br>
+        <input type="checkbox" name="item1" id="item2" value="Dormir">
+        <label for="item2">Dormir</label>
+        <br>
+        <input type="checkbox" name="item1" id="item3" value="Viajar">
+        <label for="item3">Viajar</label>
+        <br>
+        <br>
+
+        <select name="cor" required>
+            <option selected disabled>Selecione uma cor</option>
+            <option value="branco">Branco</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="rosa">Rosa</option>
+            <option value="azul">Azul</option>
+            <option value="preto">Preto</option>
+        </select>
+        <br>
+        <br>
+
+        <textarea name="comentario" id="coment-1" placeholder="Dê sua opinião" rows="8" cols="80"></textarea>
+
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
