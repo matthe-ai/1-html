@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+        }
+
+        .topo{
+            background-color: gray;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .links{
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .links a{
+            color: white;
+            padding: 10px 15px;
+            float: left;
+            display: block;
+            text-decoration: none;
+        }
+
+        .coluna-1{
+            float: left;
+            width: 50%;
+            padding: 15px;
+        }
+
+        .coluna-2{
+            float: right;
+            width: 50%;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>DIVs e HTML semantico</h1>
+    <p>As div são divisorias que o site pode ter, a primeira vista ela não parece ter nada de diferente se comparado com o HTML feito normalmente mas com o CSS, as divs viram outra coisa.</p>
+    <p>Para adicionar o CSS a essas divs, é necessario atribuir uma classe a cada uma e adicionar no head a tag <b>style</b> que é onde serão feitas as alterações.</p>
+
+    <div class="topo"> <!--DIV para fazer o topo-->
+        <h2>Topo do site</h2>
+        <p>Aqui fica a parte de cima das DIVs</p>
+    </div>
+
+    <div class="links"> <!--DIV para criar uma lista de links-->
+        <a href="../index.html">Retornar a pagina principal</a>
+        <a href="video.html">Exercicio video</a>
+        <a href="audio.html">Exercicio audio</a>
+        <a href="formulario.html">Exercicio formulario</a>
+    </div>
+
+    <div class="coluna-1"> <!--DIV para fazer um paragrafo em uma coluna-->
+        <h2>Coluna 1</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur commodi cupiditate qui reiciendis nobis eveniet accusantium velit hic iste! Non, earum. Unde dolor aliquid beatae laboriosam eligendi! Ullam, vero consequuntur?</p>
+    </div>
+
+    <div class="coluna-2"> <!--DIV para fazer um paragrafo em uma coluna-->
+        <h2>Coluna 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit dicta harum itaque nostrum optio dolorem neque facere nam nihil. Laudantium, itaque provident asperiores architecto aperiam esse pariatur perferendis similique!</p>
+    </div>
+</body>
+</html>
